@@ -12,6 +12,8 @@ const Hero: React.FC<HeroProps> = () => {
           alt=""
           fill
           className=" object-cover"
+          priority
+          quality={100}
         />
         <div className="text-holder absolute box-border p-[24px] md:p-[50px] flex flex-col gap-[16px] justify-end inset-0">
           <h1 className="w-[145px] text-[36px] lg:text-[66px] leading-[34px] lg:leading-[64px]">
@@ -30,7 +32,9 @@ const Hero: React.FC<HeroProps> = () => {
           alt=""
           fill
           className=" object-cover object-[3.7%_46%]"
-        />
+          priority 
+          quality={100}
+                  />
       </div>
     </div>
   );

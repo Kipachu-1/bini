@@ -14,6 +14,7 @@ const InfoModel: React.FC<InfoModelProps> = () => {
           alt=""
           className=" object-cover"
           quality={100}
+          priority
         />
       </div>
       <div className="md:w-[60%] box-border p-[60px_16px] md:p-[60px_60px] bg-[#ffe7ba]">

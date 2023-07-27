@@ -13,6 +13,7 @@ const ModelShow: React.FC<ModelShowProps> = () => {
           height={500}
           quality={100}
           alt=""
+          priority
         />
         <p className="w-[400px] mt-5">
           Stay trendy with our chic jewelry designs.
@@ -42,6 +43,7 @@ const ModelShow: React.FC<ModelShowProps> = () => {
           height={500}
           quality={100}
           alt=""
+          priority
         />
         <p className="w-[400px] mt-5">Embrace luxury, make a statement.</p>
         <div className="w-full flex justify-start box-border px-4 sm:justify-center">
