@@ -1,0 +1,22 @@
+import { Action, ThunkAction, configureStore } from "@reduxjs/toolkit";
+import ModalsStateSlice from "./slices/ModalsStateSlice";
+import JFilterStateSlice from "./slices/JFilterStateSlice";
+export const store = configureStore({
+  reducer: {
+    ModalsState: ModalsStateSlice,
+    JFilterState: JFilterStateSlice,
+  },
+  devTools: process.env.NODE_ENV !== "production",
+});
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch;
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  RootState,
+  unknown,
+  Action
+>;
+// export const wrapper = createWrapper(store);
