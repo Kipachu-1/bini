@@ -5,7 +5,7 @@ interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="w-full flex h-[740px] mt-[50px] lg:mt-[70px]">
+    <div className="w-full flex h-[740px] mt-[50px] lg:mt-[60px]">
       <div className="w-full h-full relative">
         <Image
           src={"/ProImages/hero1.webp"}

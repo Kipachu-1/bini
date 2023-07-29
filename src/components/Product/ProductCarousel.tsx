@@ -50,11 +50,9 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
   const [activeBlock, setActiveBlock] = useState(1);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(4);
-
   const onNextClick = () => {
     if (end + 4 <= list.length) {
       setActiveBlock((prev) => (prev + 1) % 3);
-
       setStart((prev) => prev + 4);
       setEnd((prev) => prev + 4);
     }
@@ -67,6 +65,9 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
       setEnd((prev) => prev - 4);
     }
   };
+
+  const canGoBack = start - 4 >= 0;
+  const canGoNext = end + 4 <= list.length;
 
   return (
     <div className="Text-2 z-10 box-border overflow-hidden relative w-full h-fit flex items-center flex-col justify-start xl:p-[100px_60px] xl:pt-[60px] md:p-[80px_40px] p-[60px_20px] bg-[#fff] ">

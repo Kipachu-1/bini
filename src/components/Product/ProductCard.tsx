@@ -7,7 +7,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ productData }) => {
   return (
-    <div className="flex flex-col gap-3 w-full h-full">
+    <div className="flex flex-col w-full h-full">
       <div className="w-full aspect-square relative">
         <Image
           src={productData.image}
@@ -17,12 +17,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ productData }) => {
           loading="lazy"
         />
       </div>
-      <div className="flex justify-start items-center flex-col box-border p-1">
+      <div className="flex justify-start items-left flex-col box-border p-1">
         <h1>{productData.name}</h1>
-        <p>
-          {productData.currency}
-          {productData.price}
-        </p>
+        <p className="text-[14px] text-[#ddc786]">${productData.price}</p>
       </div>
     </div>
   );

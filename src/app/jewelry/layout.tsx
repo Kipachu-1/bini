@@ -7,7 +7,7 @@ export default function JewelryLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full overflow-hidden h-auto min-h-full box-border px-[20px] pt-[110px] bg-[white] flex flex-col justify-center">
+    <div className="w-full overflow-hidden h-auto min-h-full box-border px-[20px] pt-[110px] lg:pt-[140px] bg-[white] flex justify-center">
       <JewelryFilterBar />
       {children}
     </div>

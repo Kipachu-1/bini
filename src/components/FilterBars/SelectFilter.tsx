@@ -6,6 +6,7 @@ interface SelectFilterProps {
   name: string;
   options?: Option[];
   optionsStyle?: string;
+  onClick?: Function;
 }
 interface Option {
   name: string;
@@ -16,11 +17,15 @@ const SelectFilter: React.FC<SelectFilterProps> = ({
   name,
   options,
   optionsStyle,
+  onClick,
 }) => {
   const [active, setActive] = useState(false);
   return (
     <div
       onClick={() => {
+        if (onClick) {
+          onClick();
+        }
         setActive(!active);
       }}
       className="group relative flex cursor-pointer px-2 duration-300 w-full h-full justify-center items-center z-10"
@@ -43,8 +48,11 @@ const SelectFilter: React.FC<SelectFilterProps> = ({
           >
             {options?.map((item, index: number) => {
               return (
-                <div key={item.name+'id'} className="w-full h-fit p-[8px_30px] whitespace-nowrap hover:bg-[#cacaca4b] duration-300">
-                  <p key={item.name+"id_p"}>{item.name}</p>
+                <div
+                  key={item.name + "id"}
+                  className="w-full h-fit p-[8px_30px] whitespace-nowrap hover:bg-[#cacaca4b] duration-300"
+                >
+                  <p key={item.name + "id_p"}>{item.name}</p>
                 </div>
               );
             })}

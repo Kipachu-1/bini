@@ -8,7 +8,6 @@ import Hero from "@/components/Hero";
 import ModelShow from "@/components/ModelShow";
 import PopularView from "@/components/PopularView";
 import InfoModel from "@/components/InfoModel";
-import NewsLetter from "@/components/NewsLetter";
 
 const SofiaSans = Sofia_Sans({
   weight: "500",
