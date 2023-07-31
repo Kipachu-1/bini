@@ -65,7 +65,7 @@ const PopularView: React.FC<PopularViewProps> = () => {
 
   return (
     <div className="Popular_list-6 p-[40px_20px] md:p-[50px] xl:p-[100px] text-[black] min-h-min bg-white flex flex-col  justify-center items-center w-full">
-      <div className="max-w-[1440px] flex flex-col h-fit gap-[40px] w-full">
+      <div className="flex flex-col h-fit gap-[40px] w-full">
         <div className="w-full">
           <p className="w-full text-left text-[40px] md:text-[48px] text-[#0c2e2b]">
             TRENDING JEWELRIES

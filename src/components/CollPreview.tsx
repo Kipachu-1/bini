@@ -11,7 +11,7 @@ const CollPreview: React.FC<CollPreviewProps> = () => {
 
   return (
     <div className="Gallery-3 z-50 h-min min-h-min bg-[white] flex flex-col justify-center items-center content-center flex-nowrap p-[40px_20px] md:p-[40px]  xl:p-[100px] overflow-visible w-full  text-[black]">
-      <div className="flex flex-col md:flex-row max-w-[1000px] w-full p-0 overflow-visible relative h-min box-border gap-[10px] text-[20px]">
+      <div className="flex flex-col md:flex-row w-full p-0 overflow-visible relative h-min box-border gap-[10px] text-[20px]">
         <div className="flex flex-col gap-y-[30px] w-full ">
           <div className="w-full relative aspect-square ">
             <Image

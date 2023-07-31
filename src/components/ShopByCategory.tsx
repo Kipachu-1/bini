@@ -39,7 +39,7 @@ const ShopByCategory: React.FC<ShopByCategoryProps> = () => {
   ];
   return (
     <div className="ShopByCategory h-fit box-border p-[20px] md:px-[50px] z-1000 text-black min-h-min bg-white flex flex-col justify-center items-center content-center flex-nowrap overflow-hidden w-full">
-      <div className="w-full max-w-[1500px]">
+      <div className="w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl">Our Collections</h1>
           <p>Brilliant design and unparalleled craftsmanship</p>

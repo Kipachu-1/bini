@@ -71,7 +71,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
 
   return (
     <div className="Text-2 z-10 box-border overflow-hidden relative w-full h-fit flex items-center flex-col justify-start xl:p-[100px_60px] xl:pt-[60px] md:p-[80px_40px] p-[60px_20px] bg-[#fff] ">
-      <div className="relative  z-10 max-w-[1440px] flex flex-col items-center justify-center gap-[40px] md:gap-[50px] flex-nowrap w-full">
+      <div className="relative  z-10 flex flex-col items-center justify-center gap-[40px] md:gap-[50px] flex-nowrap w-full">
         <h1 className="text-black text-3xl">{name}</h1>
         <div className="w-full h-full relative">
           <div className="absolute flex items-center justify-between inset-0">

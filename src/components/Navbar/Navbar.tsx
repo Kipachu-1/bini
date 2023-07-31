@@ -115,10 +115,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoNameVisible = true }) => {
               </div>
               <div className=" absolute inset-0 flex justify-center items-center text-[14px]">
                 <div className="hidden sm:flex gap-7">
-                  <div className="hidden md:flex gap-[20px]">
-                    <div className="w-[80px] h-[34px] flex justify-center cursor-pointer items-center border-[2px] rounded-[12px] border-[#f2cd88]">
-                      <p className=" cursor-pointer ">Home</p>
-                    </div>
+                  <div className="hidden md:flex gap-[10px] lg:gap-[20px]">
                     <div
                       onClick={() => {
                         setCatOpen(!catOpen);

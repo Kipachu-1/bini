@@ -9,8 +9,8 @@ const ModelShow: React.FC<ModelShowProps> = () => {
       <div className="z-10 w-fit h-full relative flex flex-col text-left md:text-center items-center justify-start">
         <Image
           src={"/ProImages/asian.webp"}
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           quality={100}
           alt=""
           priority
@@ -39,8 +39,8 @@ const ModelShow: React.FC<ModelShowProps> = () => {
       <div className="z-10 w-fit h-full relative flex flex-col text-left md:text-center items-center">
         <Image
           src={"/ProImages/latina.webp"}
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           quality={100}
           alt=""
           priority

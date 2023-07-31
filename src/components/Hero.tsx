@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
       <div className="w-full h-full hidden md:flex relative">
         <Image
-          src={"/ProImages/hero2.webp"}
+          src={"/ProImages/hero3.webp"}
           alt=""
           fill
           className=" object-cover object-[3.7%_46%]"
