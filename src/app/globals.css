@@ -74,3 +74,24 @@ body {
   border-radius: 6px;
   border: 3px solid #ffffff;
 }
+
+
+.FiltersMBScollBar {
+  scrollbar-width: auto;
+  scrollbar-color: #f2cd88 #0c2e2b;
+}
+
+/* Chrome, Edge, and Safari */
+.FiltersMBScollBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.FiltersMBScollBar::-webkit-scrollbar-track {
+  background: #0c2e2b;
+}
+
+.FiltersMBScollBar::-webkit-scrollbar-thumb {
+  background-color: #f2cd88;
+  border-radius: 2px;
+  border: 0px none #ffffff;
+}

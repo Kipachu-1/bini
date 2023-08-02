@@ -8,6 +8,7 @@ import { FaRegUser } from "react-icons/fa";
 import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import {
+  selectFilterMBVisibility,
   selectNavbarVisibility,
   selectNavbarVisibilityScroll,
   setNavbarVisibility,
@@ -44,6 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoNameVisible = true }) => {
         dispatch(setNavbarVisibilityScroll(true));
         return;
       }
+
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > prevScrollY && currentScrollY - prevScrollY > 20) {

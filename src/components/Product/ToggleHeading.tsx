@@ -7,12 +7,17 @@ interface ToggleHeadingProps {
   name: string;
   children: React.ReactNode;
   initial?: boolean;
+  transition?: {
+    type?: "tween" | "keyframes" | "decay" | "spring" | "inertia" | undefined;
+    duration?: number;
+  };
 }
 
 const ToggleHeading: React.FC<ToggleHeadingProps> = ({
   name,
   children,
   initial = false,
+  transition = { type: "tween", duration: 0.6 },
 }) => {
   const [toggled, setToggled] = useState(initial);
   const toggle = () => {
@@ -45,9 +50,13 @@ const ToggleHeading: React.FC<ToggleHeadingProps> = ({
       animate(
         scope.current,
         { height: height },
-        { duration: 0.4, type: "tween" }
+        { duration: 0.4, type: transition.type }
       );
-      animateInner(scope.current, { opacity: 1 }, { duration: 0.6 });
+      animateInner(
+        scope.current,
+        { opacity: 1 },
+        { duration: transition.duration }
+      );
     }
     if (!toggled) {
       animate(
