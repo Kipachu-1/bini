@@ -6,7 +6,6 @@ import { Providers } from "@/redux/provider";
 import RQProviders from "@/utils/RQprovider";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/Footer";
-import PageWithTransition from "@/components/PageWithTransitions";
 import type { AppProps } from "next/app";
 const inter = Inter({ subsets: ["latin"] });
 
