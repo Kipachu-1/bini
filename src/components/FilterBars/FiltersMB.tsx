@@ -58,6 +58,7 @@ const FiltersMB: React.FC<FiltersMBProps> = () => {
                 {RingCategories.map((cat) => {
                   return (
                     <div
+                    key={cat.name}
                       onClick={() => {
                         if (Ca === cat.value) {
                           setCa("all");
@@ -82,6 +83,7 @@ const FiltersMB: React.FC<FiltersMBProps> = () => {
                 {BrilliantColors.map((cat) => {
                   return (
                     <div
+                    key={cat.name}
                       onClick={() => {
                         if (Co === cat.value) {
                           setCo("all");
@@ -106,6 +108,7 @@ const FiltersMB: React.FC<FiltersMBProps> = () => {
                 {MetalTypes.map((cat) => {
                   return (
                     <div
+                    key={cat.name}
                       onClick={() => {
                         if (M === cat.value) {
                           setM("all");
