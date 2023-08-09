@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = () => {
           priority
           quality={100}
         />
-        <div className="text-holder absolute box-border p-[24px] md:p-[50px] flex flex-col gap-[16px] justify-end inset-0">
+        <div className="text-holder text-[white] absolute box-border p-[24px] md:p-[50px] flex flex-col gap-[16px] justify-end inset-0">
           <h1 className="w-[145px] text-[36px] lg:text-[66px] leading-[34px] lg:leading-[64px]">
             The Sustainable Diamond Jewelry.
           </h1>
@@ -32,9 +32,9 @@ const Hero: React.FC<HeroProps> = () => {
           alt=""
           fill
           className=" object-cover object-[3.7%_46%]"
-          priority 
+          priority
           quality={100}
-                  />
+        />
       </div>
     </div>
   );

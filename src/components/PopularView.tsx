@@ -83,7 +83,7 @@ const PopularView: React.FC<PopularViewProps> = () => {
             <div className="absolute flex items-center justify-between inset-0">
               <div
                 onClick={onBackClick}
-                className="w-10 h-12 flex justify-center items-center z-10 bg-[#ffffff32] cursor-pointer border  border-black border-l-0"
+                className="w-10 h-12 flex justify-center  items-center z-10 bg-[#ffffff32] cursor-pointer border  border-black border-l-0"
               >
                 <MdNavigateNext className="rotate-180 text-3xl" color="black" />
               </div>

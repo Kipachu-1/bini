@@ -1,4 +1,3 @@
-import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import DesText from "@/components/DesText";
@@ -9,12 +8,6 @@ import ModelShow from "@/components/ModelShow";
 import PopularView from "@/components/PopularView";
 import InfoModel from "@/components/InfoModel";
 
-const SofiaSans = Sofia_Sans({
-  weight: "500",
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "BI~NI home",
@@ -24,11 +17,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className={SofiaSans.className}>
+      <div >
         <Hero />
         <DesText />
         <ModelShow />
-        <ShopByCategory /> 
+        <ShopByCategory />
         <PopularView />
         <InfoModel />
         <CollPreview />

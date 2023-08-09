@@ -32,6 +32,7 @@ const BlockList: React.FC<BlockListProps> = ({ list }) => {
                 src={item.image}
                 fill
                 quality={100}
+                priority
               />
             </Link>
           </div>

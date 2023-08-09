@@ -19,10 +19,10 @@ const InfoModel: React.FC<InfoModelProps> = () => {
       </div>
       <div className="md:w-[60%] box-border p-[60px_16px] md:p-[60px_60px] bg-[#ffe7ba]">
         <div className="ml-[0px] mr-auto md:max-w-[470px]">
-          <h3 className="text-[42px] md:text-[100px] md:leading-[100px]">
+          <h3 className="text-[42px] md:text-[100px] leading-[90px]">
             Unearth the beauty of responsibly crafted jewels
           </h3>
-          <div className="mt-[24px] md:mt-[40px]">
+          <div className="mt-[24px] text-[16px] md:mt-[40px]">
             <p>
               Experience sustainable luxury at its best with our lab-grown
               diamonds and ethically sourced solid gold. Meticulously created by

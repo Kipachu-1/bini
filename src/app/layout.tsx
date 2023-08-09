@@ -1,13 +1,21 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
+import {
+  Sofia_Sans,
+  Roboto_Condensed,
+  Ubuntu,
+  Signika,
+} from "next/font/google";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Providers } from "@/redux/provider";
 import RQProviders from "@/utils/RQprovider";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/Footer";
-import type { AppProps } from "next/app";
-const inter = Inter({ subsets: ["latin"] });
+const RobotoS = Roboto_Condensed({
+  weight: "400",
+  style: ["normal"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   description: "Jewelry store BI~NI",
@@ -21,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={RobotoS.className}>
         <NextTopLoader color="#f2cd88" />
         <Providers>
           <RQProviders>

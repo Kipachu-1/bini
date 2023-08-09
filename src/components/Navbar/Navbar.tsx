@@ -82,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoNameVisible = true }) => {
             animate={{ top: "0px" }}
             exit={{ top: "-70px" }}
             transition={{ duration: 0.6, type: "tween" }}
-            className="fixed h-[50px] lg:h-[70px] w-full right-0 left-0 z-[10000] box-border justify-center flex text-[#f2cd88] bg-[#0c2e2b] border-b border-[#f2cd88]"
+            className="fixed h-[50px] lg:h-[70px] w-full right-0 left-0 z-[8000] box-border justify-center flex text-[#f2cd88] bg-[#0c2e2b] border-b border-[#f2cd88]"
           >
             <div className="flex relative justify-between items-center w-full p-[10px_20px] max-w-[1800px]">
               <div className="flex gap-[16px] items-center md:hidden z-[50]">

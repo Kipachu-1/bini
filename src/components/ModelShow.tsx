@@ -15,7 +15,7 @@ const ModelShow: React.FC<ModelShowProps> = () => {
           alt=""
           priority
         />
-        <p className="w-[400px] mt-5">
+        <p className="w-[400px] mt-3">
           Stay trendy with our chic jewelry designs.
         </p>
         <div className="w-full flex justify-start px-4 sm:justify-center">
@@ -45,7 +45,7 @@ const ModelShow: React.FC<ModelShowProps> = () => {
           alt=""
           priority
         />
-        <p className="w-[400px] mt-5">Embrace luxury, make a statement.</p>
+        <p className="w-[400px] mt-3">Embrace luxury, make a statement.</p>
         <div className="w-full flex justify-start box-border px-4 sm:justify-center">
           <Button
             size="small"
