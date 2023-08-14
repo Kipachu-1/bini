@@ -134,6 +134,9 @@ const Catalog: React.FC<CatalogProps> = () => {
                   key={activeCategory + p.name}
                 >
                   <Link
+                    onClick={() => {
+                      dispatch(setNavbarVisibility(false));
+                    }}
                     href={`/jewelry/${activeCategory.toLowerCase()}/${p.name.toLowerCase()}`}
                   >
                     <ProductBlock

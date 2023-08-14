@@ -25,15 +25,8 @@ const BlockList: React.FC<BlockListProps> = ({ list }) => {
             key={item.id}
             className="relative w-full aspect-square shadow-lg cursor-pointer"
           >
-            <Link href={`/j/${item.id}`} key={item.id + "_link"}>
-              <Image
-                key={item.id + "_image"}
-                alt=""
-                src={item.image}
-                fill
-                quality={100}
-                priority
-              />
+            <Link href={`/j/${item.id}`}>
+              <Image alt="" src={item.image} fill quality={100} priority />
             </Link>
           </div>
         );

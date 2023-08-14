@@ -57,7 +57,7 @@ const CollPreview: React.FC<CollPreviewProps> = () => {
             }}
           >
             Discover our stunning gold necklace set with dazzling sapphires and
-            diamonds, a timeless treasure that you'll cherish forever.
+            diamonds, a timeless treasure that you&apos;ll cherish forever.
           </motion.p>
         </div>
         <div className="flex flex-col gap-y-[16px] w-full">
