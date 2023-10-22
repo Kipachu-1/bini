@@ -11,6 +11,7 @@ import { Providers } from "@/redux/provider";
 import RQProviders from "@/utils/RQprovider";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/Footer";
+import SplashScreen from "@/components/Loaders/SplashScreen";
 const RobotoS = Roboto_Condensed({
   weight: "400",
   style: ["normal"],
@@ -38,6 +39,7 @@ export default function RootLayout({
             <Footer className="text-[black] bg-white" />
           </RQProviders>
         </Providers>
+        <SplashScreen />
       </body>
     </html>
   );
