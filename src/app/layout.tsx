@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={RobotoS.className}>
+        <SplashScreen />
         <NextTopLoader color="#f2cd88" />
         <Providers>
           <RQProviders>
@@ -39,7 +40,6 @@ export default function RootLayout({
             <Footer className="text-[black] bg-white" />
           </RQProviders>
         </Providers>
-        <SplashScreen />
       </body>
     </html>
   );

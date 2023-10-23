@@ -11,13 +11,9 @@ const SplashScreen = () => {
       setVisible(false);
     }, 1500);
   }, []);
-  useEffect(() => {
-    if (!visible) {
-      animate(scope.current, { opacity: 0, scale: 0.5 }, { duration: 0.2 });
-    }
-  }, [visible]);
+
   return (
-    <AnimatePresence initial>
+    <AnimatePresence>
       {visible && (
         <motion.div
           transition={{ duration: 1 }}
@@ -27,7 +23,7 @@ const SplashScreen = () => {
           className="fixed z-[9999] bg-[#0c2e2b]  inset-0 w-full h-full flex justify-center items-center"
         >
           <motion.div
-            style={{ scale: 0.5, opacity: 0 }}
+            initial={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.5, opacity: 0 }}
             ref={scope}
           >
